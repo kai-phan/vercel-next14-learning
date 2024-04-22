@@ -8,15 +8,37 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - name: Log key
-      run: echo "${{ secrets.HOST }}"
     - name: Checkout
       uses: actions/checkout@v2
     - name: Run remote ssh command
       uses: appleboy/ssh-action@master
       with:
-        host: ${{ secrets.HOST }}
-        key: ${{ secrets.SSH_KEY }}
+        host: 18.142.183.105
+        key:  MIIEpAIBAAKCAQEAkMWxAroxyZcuPMVmG5Ga+Ne7T2F8KLlgBJ4m7p6RF7kUTfhO
+              Hg/Uw9+NqKzk4v5QKgdnNI22Wb/grceUy5/NpUBRTpKP2Q8i/tSoMYd+seFKIYst
+              edvcLylA0eP8k82EvrM9cF0QSVDyF7Y01/wRBo2LK/DEw2qCMUNCrnUCD9Gn8laf
+              sux/cyGruNJfY8D5rj59OGbQMcpE7e2jnpo3HdDFHZD/P4jo0MdNggfZWjQnZzZL
+              wvTYk3h5xwR/9nsDrHJV0KBgdszrN18W9Rw57aU63D62urYadmeibK50t0M5hIi6
+              cF5UtF10Dim2ZQCf0Cxu6PPD7V/P0zICRCcKdQIDAQABAoIBABGmaHxCowtGyTZT
+              gq1dxR0NgCKfafm1EAXAGlMBNgNEZztSSIPVvkTbHnQwD/+0raVSHb0EgfTTNds5
+              9+QTaYj6HG+N4se91rBm0NKpCEM7ikQoqbSvn1qIlwR/3S1P4x000Qq/7dpiagGG
+              D089xf2ciBklU3fXpmPHJXwLe+Ldp7/b8kds7G42cRevMopqQQI4Ny1u0ca5EPuZ
+              bzLuJFOXd6YV7lWXVVbcspyQVOMf/qPdb9fsP9zLDtMJIDZtgCKJZO+JHeaNs0tX
+              QLs/nEyTxZUdprIZ3l2Ox3w/t37dbFcVLfgBVhxV61/1W/7bk59bl+RuXPAfDN71
+              dNeW+ckCgYEAwzZ0rZue4+5P3uEOgJ2Gnbu+Q5n4RcxM7KdlYE5hqB2FtYGbsxk0
+              CQK1OFgvVcFW4AdzVqbK3OrX5VMnT+b1v3sLQWSq+brMyd+t7PDCOz9fg9kIW85+
+              9DcQspj1x1ISRz+13Yqk9ePtbSB26/d0ivz78VI6F4TcSlilekm5GH8CgYEAvdpU
+              lJ5ICYIJQHB1bdBDWU4IOOzdrkvEOhKMyXxD3EpP9JTsP6tfWoMYge5ZZY+by+Vu
+              H++gFuxk/2Y3b8VCzBsNxN5XA2u4jsIMJ9J8fAPx9QN+QlLq8Xa7cfDW3gNwig7y
+              nOhPQACPkFH10esYBFORJbvymMjDL2s5K1lWgwsCgYEAwgoECnkQg/HjFGDSoId0
+              Qp9WbS3DueVsZSOzQfpHWesWeCd/k5OuxHIbngkR7ATFDOR7AhvCs7r/pOR1xBeI
+              GK/+rR6aUKccXmFnKYjbGDdTAuSdSVxFlwyRHWWrkFeE8atjY/YnKH9KBlnpu316
+              K5lx+RrJwYz/xyq8OYTEZpMCgYEAnhvcwqSK07hC4jKF6T0/SXlt6ZKCD6yzr7VR
+              IF9n2Gbe7Y60rVWYJLX2zAZm1ujhU84vh1M1nMGkXvqOgnviZD7HmcOc7ZFhcypx
+              mxx1ZYaXk3gkRzHszckW1A5Bs0VkDOXj8P6bOW7+IK/RK9BBASFjSOycXdccjjoa
+              s1pEbP8CgYBqbEfSVNBS7/69pV+zJiOFQRvI7mKNajpHI+wGyMkAxuLnf0fCVvJp
+              0zWJj6PsiznQSzIqK1X/hM/tgI3/myxpD1QIcKS5n9+nw2/l9t+GWCFjDqtbQNcf
+              /0MZeDus0aF/OpNtfJU7eBLSTJiJPkiAM0sm7tWt4mZWeIltkcW2nA==
         script: |
           echo "Hello World"
 
