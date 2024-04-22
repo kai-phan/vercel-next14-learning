@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Log key
-      run: echo "${{ secrets.SSH_KEY }}"
+      run: echo "${{ secrets.HOST }}"
     - name: Checkout
       uses: actions/checkout@v2
     - name: Run remote ssh command
