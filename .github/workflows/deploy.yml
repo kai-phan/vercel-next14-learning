@@ -17,6 +17,9 @@ jobs:
         script: |
           cd vercel-next14-learning
           git pull origin master
+          export NVM_DIR=~/.nvm
+          source ~/.nvm/nvm.sh
+          npm --help
           npm install
           npm run build
 
