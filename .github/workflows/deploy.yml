@@ -8,8 +8,6 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - name: Checkout
-      uses: actions/checkout@v2
     - name: Run remote ssh command
       uses: appleboy/ssh-action@master
       with:
@@ -17,5 +15,8 @@ jobs:
         host: ${{ secrets.HOST }}
         key: ${{ secrets.SSH_KEY }}
         script: |
-          echo "Hello World From remote server"
+          cd vercel-next14-learning
+          git pull origin master
+          npm install
+          npm run build
 
