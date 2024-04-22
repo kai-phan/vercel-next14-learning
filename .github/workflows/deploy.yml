@@ -13,8 +13,8 @@ jobs:
     - name: Run remote ssh command
       uses: appleboy/ssh-action@master
       with:
-        host: ${{ secrets.HOST }}
         username: ${{ secrets.USERNAME }}
+        host: ${{ secrets.HOST }}
         key: ${{ secrets.SSH_KEY }}
         script: |
           echo "Hello World From remote server"
